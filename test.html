@@ -2,29 +2,48 @@
 <html>
 <head>
     <title>SSRF Test</title>
-
-    <!-- Open Graph Image Tags -->
-    <meta property="og:image" content="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/og-image.jpg">
-    <meta property="og:image:url" content="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/og-image-url.jpg">
-    <meta property="og:image:secure_url" content="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/og-image-secure.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <!-- Twitter Card Image Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/twitter-image.jpg">
-    <meta name="twitter:image:src" content="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/twitter-image-src.jpg">
-
-    <!-- Additional Metadata (for completeness) -->
-    <meta property="og:title" content="SSRF Test Page">
-    <meta property="og:description" content="Testing Twitterbot image fetching">
-    <meta property="og:url" content="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/">
-    <meta name="twitter:title" content="SSRF Test Page">
-    <meta name="twitter:description" content="Testing Twitterbot image fetching">
 </head>
 <body>
     <h1>Hello</h1>
-    <p>If Twitterbot fetches any image, you will see a request in your Collaborator.</p>
+
+    <!-- محاولة 1: <img> -->
+    <img src="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/test-img.png">
+
+    <!-- محاولة 2: <link> -->
+    <link rel="stylesheet" href="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/test-style.css">
+
+    <!-- محاولة 3: <script> -->
+    <script src="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/test-script.js"></script>
+
+    <!-- محاولة 4: <iframe> -->
+    <iframe src="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/test-iframe.html"></iframe>
+
+    <!-- محاولة 5: <video> -->
+    <video src="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/test-video.mp4"></video>
+
+    <!-- محاولة 6: <audio> -->
+    <audio src="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/test-audio.mp3"></audio>
+
+    <!-- محاولة 7: <source> -->
+    <picture>
+        <source srcset="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/test-source.jpg">
+    </picture>
+
+    <!-- محاولة 8: <object> -->
+    <object data="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/test-object.html"></object>
+
+    <!-- محاولة 9: <embed> -->
+    <embed src="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/test-embed.html">
+
+    <!-- محاولة 10: <track> -->
+    <video>
+        <track src="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/test-track.vtt">
+    </video>
+
+    <!-- محاولة 11: <input type="image"> -->
+    <input type="image" src="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/test-input-image.png">
+
+    <!-- محاولة 12: <body background> -->
+    <body background="https://ayclbfzvr3wdlvk8zg5trfveg5mzaqyf.oastify.com/test-body-bg.jpg">
 </body>
 </html>
