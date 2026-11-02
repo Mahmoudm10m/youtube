@@ -3,15 +3,15 @@
 <head>
     <title>SSRF Test</title>
 
-    <!-- Open Graph Image Tags -->
-    <meta property="og:image" content="https://webhook.site/b83c2026-3024-4b06-8b71-a0eeed30c69c/og-image.jpg">
-    <meta property="og:image:url" content="https://webhook.site/b83c2026-3024-4b06-8b71-a0eeed30c69c/og-image-url.jpg">
-    <meta property="og:image:secure_url" content="https://webhook.site/b83c2026-3024-4b06-8b71-a0eeed30c69c/og-image-secure.jpg">
+    <!-- Open Graph Image (YouTube في الـ path، webhook.site في الـ host) -->
+    <meta property="og:image" content="https://webhook.site/b83c2026-3024-4b06-8b71-a0eeed30c69c/youtube.com/og-image.jpg">
+    <meta property="og:image:url" content="https://webhook.site/b83c2026-3024-4b06-8b71-a0eeed30c69c/youtube.com/og-image-url.jpg">
+    <meta property="og:image:secure_url" content="https://webhook.site/b83c2026-3024-4b06-8b71-a0eeed30c69c/youtube.com/og-image-secure.jpg">
 
-    <!-- Twitter Card Image Tags -->
+    <!-- Twitter Card Image (YouTube في الـ path) -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://webhook.site/b83c2026-3024-4b06-8b71-a0eeed30c69c/twitter-image.jpg">
-    <meta name="twitter:image:src" content="https://webhook.site/b83c2026-3024-4b06-8b71-a0eeed30c69c/twitter-image-src.jpg">
+    <meta name="twitter:image" content="https://webhook.site/b83c2026-3024-4b06-8b71-a0eeed30c69c/youtube.com/twitter-image.jpg">
+    <meta name="twitter:image:src" content="https://webhook.site/b83c2026-3024-4b06-8b71-a0eeed30c69c/youtube.com/twitter-image-src.jpg">
 
     <!-- Additional Metadata -->
     <meta property="og:title" content="SSRF Test Page">
@@ -21,6 +21,6 @@
 </head>
 <body>
     <h1>Hello</h1>
-    <p>If Twitterbot fte.</p>
+    <p>If Twitterbot fetches any image, you will see a request in Webhook.site.</p>
 </body>
 </html>
